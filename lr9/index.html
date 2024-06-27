@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Пример комбинированного JavaScript</title>
+  <!-- Встроенный скрипт в head -->
+  <script>
+    function sayHelloFromHead() {
+      alert("Привет из секции head!");
+    }
+
+    function add(a, b) {
+      return a + b;
+    }
+
+    function demoOperators() {
+      // if оператор
+      let number = prompt("Введите число от 1 до 5:");
+      if (number == 1) {
+        alert("Вы ввели один");
+      } else {
+        alert("Вы ввели число, отличное от одного");
+      }
+
+      // switch оператор
+      switch (number) {
+        case '1':
+          alert("Switch: Вы ввели один");
+          break;
+        case '2':
+          alert("Switch: Вы ввели два");
+          break;
+        default:
+          alert("Switch: Вы ввели число, отличное от одного или двух");
+      }
+
+      // for цикл
+      for (let i = 0; i < 3; i++) {
+        if (i == 1) continue;
+        alert("Итерация цикла for: " + i);
+      }
+
+      // while цикл
+      let count = 0;
+      while (count < 3) {
+        if (count == 1) break;
+        alert("Итерация цикла while: " + count);
+        count++;
+      }
+
+      // do..while цикл
+      let doCount = 0;
+      do {
+        alert("Итерация цикла do..while: " + doCount);
+        doCount++;
+      } while (doCount < 3);
+
+      // функция с return
+      alert("Возврат функции: " + add(2, 3));
+    }
+
+    function showDialogs() {
+      // Alert
+      alert("Это диалоговое окно alert");
+
+      // Confirm
+      let isConfirmed = confirm("Вы подтверждаете это?");
+      if (isConfirmed) {
+        alert("Вы подтвердили!");
+      } else {
+        alert("Вы отменили!");
+      }
+
+      // Prompt
+      let userResponse = prompt("Пожалуйста, введите ваше имя:", "Ваше имя здесь");
+      if (userResponse != null) {
+        alert("Привет, " + userResponse + "!");
+      } else {
+        alert("Вы ничего не ввели.");
+      }
+    }
+
+    function linkClicked() {
+      alert("Вы нажали на ссылку!");
+    }
+  </script>
+</head>
+<body>
+<!-- Встроенный атрибут -->
+<button onclick="alert('Привет из встроенного атрибута!')">Нажмите меня (встроенный атрибут)</button>
+<br><br>
+<button onclick="sayHelloFromHead()">Нажмите меня (скрипт в head)</button>
+<br><br>
+<button onclick="sayHelloFromBody()">Нажмите меня (скрипт в body)</button>
+<br><br>
+<button onclick="demoOperators()">Запустить операторы JS</button>
+<br><br>
+<button onclick="showDialogs()">Показать диалоговые окна</button>
+<br><br>
+<a href="#" onclick="linkClicked()">Нажмите на эту ссылку</a>
+<!-- Встроенный скрипт в body -->
+<script>
+  function sayHelloFromBody() {
+    alert("Привет из секции body!");
+  }
+</script>
+<!-- Внешний скрипт -->
+<script src="js/app.js"></script>
+</body>
+</html>

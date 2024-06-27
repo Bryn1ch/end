@@ -1,0 +1,40 @@
+.dialog {
+  width: 300px;
+  padding: 20px;
+  background-color: #f7d7a8;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 50px auto;
+}
+.dialog h2 {
+  margin-top: 0;
+  color: #86531f;
+}
+.dialog label {
+  display: block;
+  margin-bottom: 5px;
+}
+.dialog select, .dialog input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.dialog input[type="checkbox"] {
+  width: auto;
+  margin-right: 5px;
+}
+.dialog button {
+  width: 100%;
+  padding: 10px;
+  background-color: #c27a2d;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.dialog button:hover {
+  background-color: #a86624;
+}

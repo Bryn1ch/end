@@ -1,0 +1,151 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 5% 95%;
+  height: 100%;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.item1 {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.container1 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+}
+
+.item2 {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.container2 {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.item3 {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.container3 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container4 {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.container5 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.container6 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.container7 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.container8 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.container9 {
+  display: grid;
+  grid-template-rows: 100% 50%;
+}
+
+.container10 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.container11 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.container12 {
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+
+.container13 {
+  display: grid;
+  grid-template-rows: 1fr;
+}
+
+.container14 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.container15 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.container19{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.item4, .item5, .item6, .item7, .item8, .item9, .item10 {
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.item4 {
+  grid-column: 0 / 3;
+  grid-row: 0 / 3;
+}
+
+.item5 {
+  grid-column: 0 / 2;
+  grid-row: 0 / 3;
+}
+
+.item6 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.item7 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.item8 {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+
+.item9 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.item10 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}

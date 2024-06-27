@@ -1,0 +1,184 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 5%;
+}
+
+.container1 {
+  display: flex;
+  flex: 1;
+  height: 95%;
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;                  /* Занимает 50% ширины container1 */
+  height: 100%;
+  max-width: 50vw;             /* Задаем максимальную ширину 50% ширины экрана */
+}
+
+.container3 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50%; /* Изменено на 100% */
+  max-width: 50vw;
+}
+
+.container4 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: stretch; /* Растягиваем до конца родительского контейнера */
+}
+
+.container5 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: stretch; /* Растягиваем до конца родительского контейнера */
+}
+
+.container6 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;                  /* Занимает 50% ширины container1 */
+  height: 50%;
+}
+
+.container7 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;                  /* Занимает 50% ширины container1 */
+  height: 50%;
+}
+
+.container8 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: stretch; /* Растягиваем до конца родительского контейнера */
+}
+
+.container9 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: stretch; /* Растягиваем до конца родительского контейнера */
+}
+
+.container10 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;                  /* Занимает 50% ширины container1 */
+  height: 50%;
+}
+
+.container11 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;                  /* Занимает 50% ширины container1 */
+  height: 50%;
+}
+
+.container12 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: stretch; /* Растягиваем до конца родительского контейнера */
+}
+
+.container13 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-self: stretch; /* Растягиваем до конца родительского контейнера */
+}
+
+.container14 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;                  /* Занимает 50% ширины container1 */
+  height: 50%;
+}
+
+.container15 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;                  /* Занимает 50% ширины container1 */
+  height: 50%;
+}
+
+.item1 {
+  flex: 0 1 100%;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.item2 {
+  flex: 1 1 50%;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.item3 {
+  flex: 1 1 50%;
+  height: 100%;                /* 100% высоты контейнера2 */   /* 50% ширины контейнера2 */
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.item4 {
+  flex: 1 1 50%;               /* Занимает 50% ширины контейнера3 */
+  height: 100%;                /* Занимает 100% высоты контейнера3 */
+  border: 1px solid black;
+  box-sizing: border-box;   /* Помещает элемент в крайнее правое положение */
+}
+
+.item5 {
+  flex: 1 1 50%;
+  height: 100%;                /* 100% высоты контейнера2 */   /* 50% ширины контейнера2 */
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.item6 {
+  flex: 1 1 50%;
+  height: 100%;                /* 100% высоты контейнера2 */   /* 50% ширины контейнера2 */
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.item7 {
+  flex: 1 1 50%;
+  height: 100%;                /* 100% высоты контейнера2 */   /* 50% ширины контейнера2 */
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.item8 {
+  flex: 1 1 50%;
+  height: 100%;                /* 100% высоты контейнера2 */   /* 50% ширины контейнера2 */
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.item9 {
+  flex: 1 1 50%;
+  height: 100%;                /* 100% высоты контейнера2 */   /* 50% ширины контейнера2 */
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.item10 {
+  flex: 1 1 50%;
+  height: 100%;                /* 100% высоты контейнера2 */   /* 50% ширины контейнера2 */
+  border: 1px solid black;
+  box-sizing: border-box;
+}

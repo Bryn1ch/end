@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пользовательская форма</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+    }
+    .form-container h2 {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .form-container label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="url"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .form-container .error {
+      color: red;
+      font-size: 0.9em;
+    }
+    .form-container .valid {
+      color: green;
+      font-size: 0.9em;
+    }
+    .form-container .input-group {
+      margin-bottom: 15px;
+    }
+    .form-container .save-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .form-container .save-button:hover {
+      background-color: #45a049;
+    }
+    .personal-info {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .personal-info img {
+      max-width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .document-info {
+      margin-top: 20px;
+    }
+    .apply-styles-button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .apply-styles-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+<div class="personal-info" id="element1">
+  <h1>Захаревич Олег Вацлавович</h1>
+  <p><a href="https://ru.pinterest.com/" target="_blank">Ссылка на мой любимый сайт</a></p>
+  <img src="https://via.placeholder.com/100" alt="Пример изображения">
+</div>
+
+<div class="form-container" id="element2">
+  <h2>Edit the user profile</h2>
+  <form id="userForm">
+    <div class="input-group">
+      <label for="id">ID</label>
+      <input type="text" id="id" name="id" value="3" readonly>
+    </div>
+    <div class="input-group">
+      <label for="fullname">Full name</label>
+      <input type="text" id="fullname" name="fullname" value="Form Validation" required>
+      <span class="valid">✔️</span>
+    </div>
+    <div class="input-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" value="hello@" required>
+      <span class="error">The email address is not valid</span>
+    </div>
+    <div class="input-group">
+      <label for="website">Website</label>
+      <input type="url" id="website" name="website" value="formvalidation.io" required>
+      <span class="valid">✔️</span>
+    </div>
+    <button type="submit" class="save-button">Save</button>
+  </form>
+</div>
+
+<div class="document-info" id="docInfo"></div>
+<button id="docButton">Document Info</button>
+
+<!-- New button to apply styles -->
+<button id="styleButton" class="apply-styles-button">Apply Styles to Element №1</button>
+
+<script>
+  // Function to show document information
+  function showDocumentInfo() {
+    const docInfo = document.getElementById('docInfo');
+    docInfo.innerHTML = `
+      <p>URL документа: ${document.URL}</p>
+      <p>Заголовок документа: ${document.title}</p>
+      <p>Последняя дата изменения документа: ${document.lastModified}</p>
+    `;
+  }
+
+  // Event on form submit
+  document.getElementById('userForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent form submission for demonstration
+
+    // Display document information after 5 seconds
+    setTimeout(showDocumentInfo, 5000);
+
+    alert('Форма отправлена!');
+  });
+
+  // Event on document info button click
+  document.getElementById('docButton').addEventListener('click', function() {
+    setTimeout(showDocumentInfo, 5000);
+  });
+
+  // Event on element №1 click to remove it
+  document.getElementById('element1').addEventListener('click', function() {
+    this.remove();
+  });
+
+  // Apply styles to element №1 on button click
+  document.getElementById('styleButton').addEventListener('click', function() {
+    const element1 = document.getElementById('element1');
+    element1.style.color = 'red';
+    element1.style.backgroundColor = 'white';
+    element1.style.fontFamily = 'Verdana';
+    element1.style.fontSize = '10px';
+    element1.style.border = '1px solid blue';
+  });
+</script>
+</body>
+</html>
